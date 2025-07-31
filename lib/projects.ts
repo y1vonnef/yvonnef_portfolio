@@ -40,7 +40,7 @@ export const projects: Project[] = [
       {
         title: "Texting Assistant",
         content:
-          "I developed product vision and a 1-year roadmap for AI content generation features based on user insights, by leading a 5-member team to conduct 40+ qualitative ethnographic interviews and co-design sessions, and conducting a survey with 1062 responses; the strategy focused on balancing user agency with proactive nudges that match user intention, and high-quality generations that fit users’ mental models.",
+          "I developed product vision and a 1-year roadmap for AI content generation features based on user insights, by leading a 5-member team to conduct 40+ qualitative ethnographic interviews and co-design sessions, and conducting a survey with 1062 responses; the strategy focused on balancing user agency with proactive nudges that match user intention, and high-quality generations that fit users’ mental models.The proactive AI nudges are also powered by an intention-detection ML model.",
         images: [
           "https://freight.cargo.site/t/original/i/a2cd7ae45ad0c3da8ef6adb0f6e5c0b89757dc8ba905697a3622a44f16d0c119/ezgif-220dd9513cd06b.gif",
         ],
