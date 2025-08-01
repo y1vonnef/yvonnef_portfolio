@@ -90,7 +90,7 @@ export const projects: Project[] = [
       {
         title: "Prompt Assistant Prototype",
         content:
-          "I also built this prompting assistant prototype to explore innovative UX to make working with AI easier for customers.",
+          "I also built this prompting assistant prototype to explore innovative UX to make working with AI easier for customers, since prompting is not a skill that comes naturally.",
         images: [
           "https://freight.cargo.site/t/original/i/0fa6b2cbd883ecb9b6ae730042b6d38c6c1d6d67d902447249998ff0589e51a4/Group-8.png",
           "https://freight.cargo.site/t/original/i/ff050e4919f34ef6cb854e724cf516c8cc27efb9e2e2dfc74e40db0b7c344a1b/Group-9.png",
