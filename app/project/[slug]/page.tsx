@@ -24,7 +24,9 @@ function ProjectSectionComponent({ section }: { section: ProjectSection }) {
       case "image-grid":
         return (
           <div className="space-y-8">
-            <p className="text-lg leading-relaxed text-foreground-secondary">{section.content}</p>
+            <p className="text-lg leading-relaxed text-foreground-secondary" style={{ whiteSpace: "pre-wrap" }}>
+              {section.content}
+            </p>
             {section.images && (
               <div className="grid md:grid-cols-2 gap-6">
                 {section.images.map((image, index) => (
@@ -45,7 +47,9 @@ function ProjectSectionComponent({ section }: { section: ProjectSection }) {
       case "full-width-image":
         return (
           <div className="space-y-8">
-            <p className="text-lg leading-relaxed text-foreground-secondary">{section.content}</p>
+            <p className="text-lg leading-relaxed text-foreground-secondary" style={{ whiteSpace: "pre-wrap" }}>
+              {section.content}
+            </p>
             {section.images && section.images[0] && (
               <div className="aspect-[2/1] relative overflow-hidden rounded-lg bg-background-secondary">
                 <Image
@@ -63,7 +67,9 @@ function ProjectSectionComponent({ section }: { section: ProjectSection }) {
         return (
           <div className="grid md:grid-cols-2 gap-12 items-start">
             <div>
-              <p className="text-lg leading-relaxed text-foreground-secondary">{section.content}</p>
+              <p className="text-lg leading-relaxed text-foreground-secondary" style={{ whiteSpace: "pre-wrap" }}>
+                {section.content}
+              </p>
             </div>
             {section.images && (
               <div className="space-y-6">
@@ -83,7 +89,11 @@ function ProjectSectionComponent({ section }: { section: ProjectSection }) {
         )
 
       default:
-        return <p className="text-lg leading-relaxed text-foreground-secondary">{section.content}</p>
+        return (
+          <p className="text-lg leading-relaxed text-foreground-secondary" style={{ whiteSpace: "pre-wrap" }}>
+            {section.content}
+          </p>
+        )
     }
   }
 
@@ -220,11 +230,7 @@ export default function ProjectPage({ params }: ProjectPageProps) {
       <section className="py-16 border-t border-background-tertiary">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <Link href="/">
-            <Button
-              variant="outline"
-              size="lg"
-              className="text-foreground border-foreground-secondary hover:bg-background-tertiary bg-transparent"
-            >
+            <Button variant="ghost" size="lg" className="text-foreground">
               View All Projects
             </Button>
           </Link>

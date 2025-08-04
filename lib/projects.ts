@@ -24,7 +24,7 @@ export const projects: Project[] = [
   {
     slug: "mobile-texting-assistant",
     title: "Mobile Texting Assistant",
-    description: "AI-powered mobile texting assistant for enhanced communication",
+    description: "AI-powered mobile texting assistant for the future of communication",
     heroImage:
       "https://freight.cargo.site/t/original/i/a72a393b1741e467acfdbe2505aa4c8443bf085d9c2bde41b8ec053c23ccebbb/4c72c3eb-d31b-4949-9813-c8f5a6ce096e.png",
     heroImageFit: "contain", // Set heroImageFit to 'contain'
@@ -38,9 +38,9 @@ export const projects: Project[] = [
         type: "text",
       },
       {
-        title: "Texting Assistant",
+        title: "Vision",
         content:
-          "I developed product vision and a 1-year roadmap for AI content generation features based on user insights, by leading a 5-member team to conduct 40+ qualitative ethnographic interviews and co-design sessions, and conducting a survey with 1062 responses; the strategy focused on balancing user agency with proactive nudges that match user intention, and high-quality generations that fit users’ mental models.The proactive AI nudges are also powered by an intention-detection ML model.",
+          "What does the future of AI-enabled texting experience feel like? How can LLM create real value for users? I led a 5-member team to conduct 40+ qualitative ethnographic interviews and co-design sessions, as well as a survey with 1062 responses. User research insights highlighted the difficulty of accurately conveying emotion through text, without the help of body language and expressions, leading to miscommunication.\n\nWith this learning, I developed product vision and a 1-year roadmap for AI content generation features based on user insights. The strategy focused on messaging centered around tone and emotion, high-quality generations that fit users’ mental models, and balancing user agency with proactive nudges that match user intention. The proactive AI nudges are also powered by an intention-detection ML model.",
         images: [
           "https://freight.cargo.site/t/original/i/a2cd7ae45ad0c3da8ef6adb0f6e5c0b89757dc8ba905697a3622a44f16d0c119/ezgif-220dd9513cd06b.gif",
         ],
@@ -48,15 +48,22 @@ export const projects: Project[] = [
         imageFit: "contain", // Set imageFit to 'contain' for this image
       },
       {
-        title: "LLM Prompt Evaluations",
+        title: "Mixed-Initiative UI",
         content:
-          "I led the team to iteratively improve LLM generation quality using evaluation tools built with Python and DSPy, making sure LLM generation is consistently high-quality, human-like, and natural. The resulting data (37% increase in daily usage) validated our assumption that users are more likely to adopt and send content that is natural and human-like while texting.",
+          "I ensured successful UX design by applying HCI principles such as the Principles of Mixed Initiative User Interfaces, including consideration of uncertainty in user intentions, and only providing significant value-add automation. As a result, the proactive AI nudges in this feature are powered by an intention-detection ML model to maximize human-AI intention match.",
+        type: "text",
+      },      
+{
+        title: "LLM Output Quality & Consistency",
+        content:
+          "I also led the team to iteratively improve LLM generation quality using evaluation tools built with Python and DSPy, making sure LLM generation is consistently high-quality, human-like, and natural. The resulting data (37% increase in daily usage) validated our assumption that users are more likely to adopt and send content that is natural and human-like while texting.\n\n (See sample evaluation output below:)",
         images: [
           "https://freight.cargo.site/t/original/i/4e4da62bd08985e02d91fdf2ee711d7f861ddb8f3888ba18aabafa1f1c795e9f/Screenshot-2025-07-31-010204.png",
         ],
         type: "full-width-image",
         imageFit: "contain", // Set imageFit to 'contain' for this image
       },
+
     ],
   },
   {
