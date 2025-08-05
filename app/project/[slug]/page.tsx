@@ -16,7 +16,12 @@ interface ProjectPageProps {
   }
 }
 
-function ProjectSectionComponent({ section }: { section: ProjectSection }) {
+interface ProjectSectionComponentProps {
+  section: ProjectSection
+  projectSlug: string // Added projectSlug prop
+}
+
+function ProjectSectionComponent({ section, projectSlug }: ProjectSectionComponentProps) {
   const renderContent = () => {
     const imageClassName = section.imageFit === "contain" ? "object-contain" : "object-cover"
 
@@ -28,17 +33,52 @@ function ProjectSectionComponent({ section }: { section: ProjectSection }) {
               {section.content}
             </p>
             {section.images && (
-              <div className="grid md:grid-cols-2 gap-6">
-                {section.images.map((image, index) => (
-                  <div key={index} className="aspect-[4/3] relative overflow-hidden rounded-lg bg-background-secondary">
-                    <Image
-                      src={image || "/placeholder.svg"}
-                      alt={`${section.title} ${index + 1}`}
-                      fill
-                      className={imageClassName}
-                    />
+              <div className="space-y-6">
+                {/* Conditional rendering for AI Brand Kit's "Brand Kit Prototype" section */}
+                {projectSlug === "ai-brand-kit" && section.title === "Brand Kit Prototype" ? (
+                  <>
+                    {/* First image (larger, full width) */}
+                    {section.images[0] && (
+                      <div className="aspect-[16/9] relative overflow-hidden rounded-lg bg-black">
+                        <Image
+                          src={section.images[0] || "/placeholder.svg"}
+                          alt={`${section.title} 1`}
+                          fill
+                          className={imageClassName}
+                        />
+                      </div>
+                    )}
+                    {/* Remaining two images (smaller, in a grid) */}
+                    {section.images.slice(1).length > 0 && (
+                      <div className="grid md:grid-cols-2 gap-6">
+                        {section.images.slice(1).map((image, index) => (
+                          <div key={index} className="aspect-[4/3] relative overflow-hidden rounded-lg bg-black">
+                            <Image
+                              src={image || "/placeholder.svg"}
+                              alt={`${section.title} ${index + 2}`}
+                              fill
+                              className={imageClassName}
+                            />
+                          </div>
+                        ))}
+                      </div>
+                    )}
+                  </>
+                ) : (
+                  // Default image-grid layout for other sections/projects
+                  <div className="grid md:grid-cols-2 gap-6">
+                    {section.images.map((image, index) => (
+                      <div key={index} className="aspect-[4/3] relative overflow-hidden rounded-lg bg-black">
+                        <Image
+                          src={image || "/placeholder.svg"}
+                          alt={`${section.title} ${index + 1}`}
+                          fill
+                          className={imageClassName}
+                        />
+                      </div>
+                    ))}
                   </div>
-                ))}
+                )}
               </div>
             )}
           </div>
@@ -51,7 +91,7 @@ function ProjectSectionComponent({ section }: { section: ProjectSection }) {
               {section.content}
             </p>
             {section.images && section.images[0] && (
-              <div className="aspect-[2/1] relative overflow-hidden rounded-lg bg-background-secondary">
+              <div className="aspect-[2/1] relative overflow-hidden rounded-lg bg-black">
                 <Image
                   src={section.images[0] || "/placeholder.svg"}
                   alt={section.title}
@@ -74,7 +114,7 @@ function ProjectSectionComponent({ section }: { section: ProjectSection }) {
             {section.images && (
               <div className="space-y-6">
                 {section.images.map((image, index) => (
-                  <div key={index} className="aspect-[3/4] relative overflow-hidden rounded-lg bg-background-secondary">
+                  <div key={index} className="aspect-[3/4] relative overflow-hidden rounded-lg bg-black">
                     <Image
                       src={image || "/placeholder.svg"}
                       alt={`${section.title} ${index + 1}`}
@@ -202,7 +242,12 @@ export default function ProjectPage({ params }: ProjectPageProps) {
               {description && <p className="text-xl text-foreground-secondary leading-relaxed mb-8">{description}</p>}
             </div>
 
-            <div className="aspect-[4/3] relative overflow-hidden rounded-lg bg-background-secondary">
+            {/* Conditional background for hero image */}
+            <div
+              className={`aspect-[4/3] relative overflow-hidden rounded-lg ${
+                params.slug === "ai-brand-kit" ? "bg-black" : "bg-background-secondary"
+              }`}
+            >
               <Image
                 src={project.heroImage || "/placeholder.svg"}
                 alt={project.title}
@@ -220,7 +265,7 @@ export default function ProjectPage({ params }: ProjectPageProps) {
         <div className="border-t border-background-tertiary">
           {sections.map((section, index) => (
             <div key={index} className={index % 2 === 1 ? "bg-background-secondary" : ""}>
-              <ProjectSectionComponent section={section} />
+              <ProjectSectionComponent section={section} projectSlug={params.slug} />
             </div>
           ))}
         </div>

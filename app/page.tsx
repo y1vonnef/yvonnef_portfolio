@@ -21,7 +21,7 @@ export default function Portfolio() {
       title: "AI Brand Kit",
       description: "",
       image:
-        "https://freight.cargo.site/t/original/i/c76673857dd5efefd73accbf6becce9a15b39448fcfe3a9f35591795c224cf40/24e636ab4d3b1e30e5d4354f1c4859e-1-1.png",
+        "https://freight.cargo.site/t/original/i/e3b8c1e9684852e8870030abf7d11bec0e7c3caeb1be9f486466cb7777382009/ezgif-5b446f21c36f19.gif",
       tags: ["AI", "Product", "Design", "Prototyping"],
       year: "2023",
       slug: "ai-brand-kit",

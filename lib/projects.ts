@@ -71,7 +71,7 @@ export const projects: Project[] = [
     title: "AI Brand Kit",
     description: "AI-powered brand identity generation for small businesses",
     heroImage:
-      "https://freight.cargo.site/t/original/i/f35c0a969b30ddc0498254254e117f555cd1e37300320ae21ba309ed9c634d9c/Group-1.png",
+      "https://freight.cargo.site/t/original/i/e3b8c1e9684852e8870030abf7d11bec0e7c3caeb1be9f486466cb7777382009/ezgif-5b446f21c36f19.gif",
     heroImageFit: "contain", // Set heroImageFit to 'contain'
     tags: ["AI", "Product", "Design", "Prototyping"],
     year: "2023",
@@ -87,7 +87,7 @@ export const projects: Project[] = [
         content:
           "I developed the generative brand kit prototype to gather feedback regarding small business owner user needs. I worked closely with the founder to validate the prototype with 30+ potential customers. We validated users' need for comprehensive brand kit generation as our main product strategy, as well as their need for easy edit and visual control. The editing feature I built and tested increased user satisfaction by 25%.",
         images: [
-          "https://freight.cargo.site/t/original/i/f35c0a969b30ddc0498254254e117f555cd1e37300320ae21ba309ed9c634d9c/Group-1.png",
+          "https://freight.cargo.site/t/original/i/e3b8c1e9684852e8870030abf7d11bec0e7c3caeb1be9f486466cb7777382009/ezgif-5b446f21c36f19.gif",
           "https://freight.cargo.site/t/original/i/8ff14bd4c2c9ad93289bc4643278a3b1ab87998b48374875aff8de87a6a049d3/Group-3.png",
           "https://freight.cargo.site/t/original/i/25e5889cab3753655a9db2fb7ac23354f98b54c3917285e0e5b3351deba57929/Group-5.png",
         ],
