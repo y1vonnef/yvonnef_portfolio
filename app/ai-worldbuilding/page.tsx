@@ -16,7 +16,7 @@ export default function AIWorldbuildingPage() {
       <section className="pt-20 pb-8">
         <div className="max-w-4xl mx-auto px-6">
           <div className="text-center mb-4">
-            <h1 className="text-5xl font-medium mb-4 leading-tight text-foreground">AI-Driven Worldbuilding</h1>
+            <h1 className="text-5xl font-medium mb-4 leading-tight text-foreground">Building Real-Time AI Worlds</h1>
           </div>
         </div>
       </section>
