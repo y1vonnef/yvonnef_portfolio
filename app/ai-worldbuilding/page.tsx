@@ -54,8 +54,7 @@ export default function AIWorldbuildingPage() {
               />
             </div>
             <p className="text-sm text-gray-600">
-              My interactive real-time AI installation engaged hundreds of visitors across multiple exhibitions,
-              demonstrating the potential for meaningful human-AI creative collaboration.
+              My interactive real-time AI installation engaged hundreds of visitors across multiple exhibitions.
             </p>
           </div>
         </section>
@@ -72,8 +71,7 @@ export default function AIWorldbuildingPage() {
               />
             </div>
             <p className="text-sm text-gray-600">
-              Sharing insights and experiences about AI-driven creative tools and their impact on storytelling and
-              worldbuilding.
+              Speaking at an art and technology conference about AI worldbuilding.
             </p>
           </div>
         </section>
