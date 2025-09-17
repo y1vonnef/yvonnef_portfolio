@@ -7,7 +7,7 @@ import Link from "next/link"
 import { ArrowLeft } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { getProjectBySlug } from "@/lib/projects"
-import { PasswordProtection } from "@/components/password-protection"
+import { PasswordProtection } from "@/components/password-protection" // Updated import statement
 import type { ProjectSection } from "@/lib/projects"
 
 interface ProjectPageProps {

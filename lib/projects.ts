@@ -40,7 +40,7 @@ export const projects: Project[] = [
       {
         title: "Vision",
         content:
-          "What does the future of AI-enabled texting experience feel like? How can LLM create real value for users? I led a 5-member team to conduct 40+ qualitative ethnographic interviews and co-design sessions, as well as a survey with 1062 responses. User research insights highlighted the difficulty of accurately conveying emotion through text, without the help of body language and expressions, leading to miscommunication.\n\nWith this learning, I developed product vision and a 1-year roadmap for AI content generation features based on user insights. The strategy focused on messaging centered around tone and emotion, high-quality generations that fit users’ mental models, and balancing user agency with proactive nudges that match user intention. The proactive AI nudges are also powered by an intention-detection ML model.",
+          "What does the future of AI-enabled texting experience feel like? How can LLM create real value for users? I led a 5-member team to conduct 40+ qualitative ethnographic interviews and co-design sessions, as well as a survey with 1062 responses. User research insights highlighted the difficulty of accurately conveying emotion through text, without the help of body language and expressions, leading to miscommunication.\n\nWith this learning, I developed product vision and a 1-year roadmap for AI content generation features based on user insights. The strategy focused on messaging centered around tone and emotion, high-quality generations that fit users' mental models, and balancing user agency with proactive nudges that match user intention. The proactive AI nudges are also powered by an intention-detection ML model.",
         images: [
           "https://freight.cargo.site/t/original/i/a2cd7ae45ad0c3da8ef6adb0f6e5c0b89757dc8ba905697a3622a44f16d0c119/ezgif-220dd9513cd06b.gif",
         ],
@@ -52,8 +52,8 @@ export const projects: Project[] = [
         content:
           "I ensured successful UX design by applying HCI principles such as the Principles of Mixed Initiative User Interfaces, including consideration of uncertainty in user intentions, and only providing significant value-add automation. As a result, the proactive AI nudges in this feature are powered by an intention-detection ML model to maximize human-AI intention match.",
         type: "text",
-      },      
-{
+      },
+      {
         title: "LLM Output Quality & Consistency",
         content:
           "I also led the team to iteratively improve LLM generation quality using evaluation tools built with Python and DSPy, making sure LLM generation is consistently high-quality, human-like, and natural. The resulting data (37% increase in daily usage) validated our assumption that users are more likely to adopt and send content that is natural and human-like while texting.\n\n (See sample evaluation output below:)",
@@ -63,7 +63,6 @@ export const projects: Project[] = [
         type: "full-width-image",
         imageFit: "contain", // Set imageFit to 'contain' for this image
       },
-
     ],
   },
   {
@@ -146,6 +145,24 @@ export const projects: Project[] = [
           "Users can drag any subject in their drawing onto another subject and mix the two. The result can be rendered directly onto the canvas, or used as a reference.",
         images: [
           "https://freight.cargo.site/t/original/i/de4af7c9fc4bac036247f40067bd5ae3c804094aeb8dd9903c38327314f1e99d/ezgif-3d9d3fcfeb075a.gif",
+        ],
+        type: "full-width-image",
+      },
+      {
+        title: "Graft Mode",
+        content:
+          'The canvas becomes malleable, and any object on it can be "grafted" onto another object, just like grafting two plant species.',
+        images: [
+          "https://freight.cargo.site/t/original/i/9e1442909a792685a143c7005559fb098315bfcf47f47b66d68459b5a3d24532/ezgif-65ebfdf0cd3fe6.gif",
+        ],
+        type: "full-width-image",
+      },
+      {
+        title: "Stroke Suggest",
+        content:
+          'Artists can see an endless ambient stream of visual possibilities play out in real time beneath their own drawing. A bit similar to an "auto-suggest for brush strokes."',
+        images: [
+          "https://freight.cargo.site/t/original/i/86c2fe1be5b1682584132d41d2f4ac1fb20b9eb21bf0d515eb060cf54f354f9b/ezgif-608a34ca5e6dc8.gif",
         ],
         type: "full-width-image",
       },
